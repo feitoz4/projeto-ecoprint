@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ecoprint — Indústria gráfica offset, flexografia e comunicação visual</title>
+<meta name="description" content="A maior gráfica do Cariri. Embalagens, offset, flexografia e comunicação visual com energia solar e insumos certificados. Desde 2008 em Juazeiro do Norte — CE.">
+<meta name="theme-color" content="#04140F">
+<meta name="author" content="Ecoprint Serviços Gráficos">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Gráfica Ecoprint">
+<meta property="og:title" content="Ecoprint — A boa impressão é a que fica">
+<meta property="og:description" content="Offset, flexografia, embalagens e comunicação visual. O mais moderno parque gráfico do Cariri.">
+<meta property="og:image" content="assets/img/about.jpg">
+
+<link rel="icon" href="assets/img/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add("js");</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Gráfica Ecoprint",
+  "legalName": "Ecoprint Serviços Gráficos Eireli",
+  "taxID": "09.521.937/0001-87",
+  "url": "https://www.ecoprintgrafica.com/",
+  "telephone": "+55 88 3571-5027",
+  "email": "atendimento@ecoprint.com.br",
+  "foundingDate": "2008",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Maria Letícia Leite Pereira, 780 — Lagoa Seca",
+    "addressLocality": "Juazeiro do Norte",
+    "addressRegion": "CE",
+    "postalCode": "63040-410",
+    "addressCountry": "BR"
+  },
+  "openingHours": "Mo-Fr 08:00-17:20",
+  "sameAs": ["https://www.instagram.com/grafica.ecoprint"]
+}
+</script>
+</head>
+
+<body id="top">
+
+<!-- ░░ PRELOADER ░░ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <div class="loader__mark">
+      <span class="loader__word" data-loader-word>ECOPRINT</span>
+    </div>
+    <div class="loader__bar"><i id="loaderBar"></i></div>
+    <div class="loader__meta">
+      <span>Indústria gráfica · Cariri — CE</span>
+      <span id="loaderNum">00</span>
+    </div>
+  </div>
+</div>
+
+<!-- ░░ CURSOR ░░ -->
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+
+<!-- ░░ GRAIN + GRID OVERLAYS ░░ -->
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ░░ HEADER ░░ -->
+<header class="header" id="header">
+  <div class="header__bar">
+    <a href="#top" class="brand" aria-label="Ecoprint — início" data-cursor="Topo">
+      <img class="brand__img brand__img--light" src="assets/img/logo-light.png" alt="Ecoprint" width="672" height="241">
+      <img class="brand__img brand__img--dark" src="assets/img/logo.png" alt="" aria-hidden="true" width="672" height="241">
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <a href="#empresa" data-nav>A Ecoprint</a>
+      <a href="#servicos" data-nav>Serviços</a>
+      <a href="#processo" data-nav>Processo</a>
+      <a href="#sustentabilidade" data-nav>Sustentabilidade</a>
+      <a href="#estrutura" data-nav>Estrutura</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="header__phone" href="tel:+558835715027" data-cursor="Ligar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg>
+        <span>(88) 3571-5027</span>
+      </a>
+      <a class="btn btn--sm" href="#orcamento" data-magnetic data-cursor="Vamos lá">
+        <span>Orçamento</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer"><i></i><i></i></button>
+    </div>
+  </div>
+  <div class="header__progress"><i id="progress"></i></div>
+</header>
+
+<!-- ░░ DRAWER MOBILE ░░ -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <nav class="drawer__nav" aria-label="Navegação mobile">
+    <a href="#empresa"><em>01</em> A Ecoprint</a>
+    <a href="#servicos"><em>02</em> Serviços</a>
+    <a href="#processo"><em>03</em> Processo</a>
+    <a href="#sustentabilidade"><em>04</em> Sustentabilidade</a>
+    <a href="#estrutura"><em>05</em> Estrutura</a>
+    <a href="#orcamento"><em>06</em> Orçamento</a>
+  </nav>
+  <div class="drawer__foot">
+    <a href="tel:+558835715027">(88) 3571-5027</a>
+    <a href="mailto:atendimento@ecoprint.com.br">atendimento@ecoprint.com.br</a>
+    <a href="https://www.instagram.com/grafica.ecoprint" target="_blank" rel="noopener">Instagram ↗</a>
+  </div>
+</div>
+
+<main id="conteudo">
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <img src="assets/img/fachada.jpg" alt="" fetchpriority="high">
+    </div>
+    <canvas class="hero__canvas" id="halftone" aria-hidden="true"></canvas>
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <p class="hero__eyebrow" data-reveal>
+        <span class="dot" aria-hidden="true"></span>
+        Juazeiro do Norte · CE — desde 2008
+      </p>
+
+      <h1 class="hero__title">
+        <span class="line"><span data-split>A boa</span></span>
+        <span class="line"><span data-split>impressão</span></span>
+        <span class="line line--accent"><span data-split>é a que fica</span><i class="period" aria-hidden="true"></i></span>
+      </h1>
+
+      <div class="hero__grid">
+        <p class="hero__lead" data-reveal data-delay="260">
+          Offset, flexografia, embalagens e comunicação visual no mais moderno
+          parque gráfico do Cariri — movido a energia solar e capaz de atender
+          o Brasil inteiro.
+        </p>
+
+        <div class="hero__cta" data-reveal data-delay="380">
+          <a class="btn btn--primary" href="#orcamento" data-magnetic data-cursor="Solicitar">
+            <span>Solicitar orçamento</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#servicos" data-magnetic data-cursor="Ver">
+            <span>Ver serviços</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__meta" data-reveal data-delay="500">
+        <div><b>Offset</b><span>Grandes tiragens</span></div>
+        <div><b>Flexografia</b><span>Rótulos e bobinas</span></div>
+        <div><b>Embalagens</b><span>Caixas e cartuchos</span></div>
+        <div><b>Visual</b><span>Banners e adesivos</span></div>
+      </div>
+    </div>
+
+    <a class="hero__scroll" href="#empresa" aria-label="Rolar">
+      <span class="hero__scroll-line"><i></i></span>
+      <span class="hero__scroll-text">Role</span>
+    </a>
+  </section>
+
+  <!-- ░░ MARQUEE ░░ -->
+  <div class="marquee marquee--type" aria-hidden="true">
+    <div class="marquee__track" data-marquee>
+      <span>Offset</span><i>✦</i><span>Flexografia</span><i>✦</i><span>Embalagens</span><i>✦</i>
+      <span>Comunicação Visual</span><i>✦</i><span>Digital</span><i>✦</i><span>Acabamento</span><i>✦</i>
+      <span>Offset</span><i>✦</i><span>Flexografia</span><i>✦</i><span>Embalagens</span><i>✦</i>
+      <span>Comunicação Visual</span><i>✦</i><span>Digital</span><i>✦</i><span>Acabamento</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ░░ NÚMEROS ░░ -->
+  <section class="stats" aria-label="Números da Ecoprint">
+    <div class="wrap stats__grid">
+      <div class="stat" data-reveal>
+        <b><span data-count="2008" data-plain>2008</span></b>
+        <span>Ano de fundação, em Juazeiro do Norte</span>
+      </div>
+      <div class="stat" data-reveal data-delay="90">
+        <b><span data-count="18">0</span><em>+</em></b>
+        <span>Anos imprimindo a boa impressão</span>
+      </div>
+      <div class="stat" data-reveal data-delay="180">
+        <b><span data-count="100">0</span><em>%</em></b>
+        <span>Estrutura movida a energia solar</span>
+      </div>
+      <div class="stat" data-reveal data-delay="270">
+        <b><span data-count="1">0</span><em>ª</em></b>
+        <span>Gráfica do interior do Ceará em flexografia</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ EMPRESA ░░ -->
+  <section class="about" id="empresa">
+    <div class="wrap">
+      <header class="sec-head">
+        <span class="sec-tag" data-reveal>01 — A Ecoprint</span>
+        <h2 class="sec-title">
+          <span class="line"><span data-split>História pautada em</span></span>
+          <span class="line"><span data-split>trabalho e dedicação</span></span>
+        </h2>
+      </header>
+
+      <div class="about__grid">
+        <div class="about__media" data-reveal>
+          <div class="about__frame" data-tilt>
+            <img src="assets/img/about.jpg" alt="Parque gráfico da Ecoprint: impressoras offset e linha de acabamento" loading="lazy" data-parallax data-speed="0.08">
+            <div class="about__badge">
+              <b>+18</b>
+              <span>anos de<br>mercado</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__text">
+          <p class="lead" data-reveal>
+            Fundada em 2008, a Ecoprint nasceu imprimindo material promocional e
+            se tornou referência em <b>embalagens personalizadas</b>. Em 2018
+            inauguramos a sede própria e trouxemos para o Cariri equipamentos
+            que ainda hoje não existem em outro lugar do interior do Ceará.
+          </p>
+          <p data-reveal data-delay="120">
+            Hoje operamos soluções integradas — da criação do projeto à impressão
+            do produto aprovado — em offset, flexografia e comunicação visual,
+            com capacidade de atendimento nacional e logística rodoviária
+            integrada.
+          </p>
+
+          <ul class="about__list">
+            <li data-reveal data-delay="180"><b>Equipe jovem e inovadora</b><span>Atendimento consultivo do briefing à entrega.</span></li>
+            <li data-reveal data-delay="240"><b>Processo automatizado</b><span>Impressão e acabamento com controle rígido de qualidade.</span></li>
+            <li data-reveal data-delay="300"><b>Insumos certificados</b><span>Papéis de áreas reflorestadas com selos internacionais.</span></li>
+          </ul>
+
+          <a class="link-arrow" href="#processo" data-reveal data-delay="360" data-cursor="Processo">
+            <span>Conheça nosso processo</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SERVIÇOS ░░ -->
+  <section class="services" id="servicos">
+    <div class="wrap">
+      <header class="sec-head sec-head--split">
+        <div>
+          <span class="sec-tag" data-reveal>02 — Serviços</span>
+          <h2 class="sec-title">
+            <span class="line"><span data-split>Uma gráfica</span></span>
+            <span class="line"><span data-split>completa</span></span>
+          </h2>
+        </div>
+        <p class="sec-desc" data-reveal data-delay="150">
+          Do rótulo em bobina à embalagem estruturada, do panfleto ao
+          envelopamento de frota. Passe o mouse para espiar e clique para
+          abrir o portfólio de cada frente.
+        </p>
+      </header>
+    </div>
+
+    <div class="svc" id="svc">
+      <div class="svc__preview" id="svcPreview" aria-hidden="true">
+        <img src="assets/img/g6.jpg" alt="" data-svc-img>
+      </div>
+
+      <ul class="svc__list">
+        <li class="svc__item" data-svc="embalagens" data-reveal>
+          <span class="svc__num">01</span>
+          <h3 class="svc__name" data-svc-nome>Embalagens</h3>
+          <button class="svc__link" type="button" data-cursor="Ver fotos" aria-label="Abrir fotos de Embalagens"></button>
+          <p class="svc__desc">Caixas em geral, cartuchos, sacolas e estruturas sob medida para o seu produto.</p>
+          <span class="svc__go" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="m21 15-5-5L5 20"/></svg><em>Ver fotos</em></span>
+        </li>
+        <li class="svc__item" data-svc="flexografia" data-reveal>
+          <span class="svc__num">02</span>
+          <h3 class="svc__name" data-svc-nome>Flexografia</h3>
+          <button class="svc__link" type="button" data-cursor="Ver fotos" aria-label="Abrir fotos de Flexografia"></button>
+          <p class="svc__desc">Etiquetas e rótulos autoadesivos e filme BOPP em bobina, para altas e baixas temperaturas.</p>
+          <span class="svc__go" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="m21 15-5-5L5 20"/></svg><em>Ver fotos</em></span>
+        </li>
+        <li class="svc__item" data-svc="promocional" data-reveal>
+          <span class="svc__num">03</span>
+          <h3 class="svc__name" data-svc-nome>Promocional</h3>
+          <button class="svc__link" type="button" data-cursor="Ver fotos" aria-label="Abrir fotos de Promocional"></button>
+          <p class="svc__desc">Encartes, panfletos, folders, blocos, receituários, timbrados e pastas.</p>
+          <span class="svc__go" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="m21 15-5-5L5 20"/></svg><em>Ver fotos</em></span>
+        </li>
+        <li class="svc__item" data-svc="comunicacao-visual" data-reveal>
+          <span class="svc__num">04</span>
+          <h3 class="svc__name" data-svc-nome>Comunicação Visual</h3>
+          <button class="svc__link" type="button" data-cursor="Ver fotos" aria-label="Abrir fotos de Comunicação Visual"></button>
+          <p class="svc__desc">Banners, adesivos, placas, envelopamento e personalização de veículos e ambientes.</p>
+          <span class="svc__go" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="m21 15-5-5L5 20"/></svg><em>Ver fotos</em></span>
+        </li>
+        <li class="svc__item" data-svc="pequenas-tiragens" data-reveal>
+          <span class="svc__num">05</span>
+          <h3 class="svc__name" data-svc-nome>Pequenas tiragens</h3>
+          <button class="svc__link" type="button" data-cursor="Ver fotos" aria-label="Abrir fotos de Pequenas tiragens"></button>
+          <p class="svc__desc">Impressão digital para volumes reduzidos, com a mesma qualidade e prazos curtos.</p>
+          <span class="svc__go" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="m21 15-5-5L5 20"/></svg><em>Ver fotos</em></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ░░ PROCESSO (sticky horizontal) ░░ -->
+  <section class="process" id="processo">
+    <div class="process__pin" data-process>
+      <div class="process__head wrap">
+        <span class="sec-tag">03 — Processo Ecoprint</span>
+        <h2 class="sec-title sec-title--sm">Do briefing à sua porta</h2>
+        <div class="process__bar"><i data-process-bar></i></div>
+      </div>
+
+      <div class="process__track" data-process-track>
+        <article class="step">
+          <span class="step__n">01</span>
+          <h3>Briefing &amp; orçamento</h3>
+          <p>Entendemos o produto, a tiragem e o prazo. Você recebe uma proposta clara, com substratos e acabamentos definidos.</p>
+          <span class="step__tag">24h para retorno</span>
+        </article>
+        <article class="step">
+          <span class="step__n">02</span>
+          <h3>Criação &amp; pré-impressão</h3>
+          <p>Criação ou tratamento da arte, prova digital, fechamento de arquivo, imposição e gravação de chapas e clichês.</p>
+          <span class="step__tag">Prova aprovada por você</span>
+        </article>
+        <article class="step">
+          <span class="step__n">03</span>
+          <h3>Impressão</h3>
+          <p>Offset para grandes tiragens, flexografia para bobinas e rótulos, digital para pequenas tiragens. Controle de cor em cada rodada.</p>
+          <span class="step__tag">Offset · Flexo · Digital</span>
+        </article>
+        <article class="step">
+          <span class="step__n">04</span>
+          <h3>Acabamento</h3>
+          <p>Corte e vinco, laminação, verniz localizado, hot stamping, colagem e montagem — tudo automatizado dentro de casa.</p>
+          <span class="step__tag">100% interno</span>
+        </article>
+        <article class="step">
+          <span class="step__n">05</span>
+          <h3>Entrega</h3>
+          <p>Conferência final, embalagem e expedição com logística rodoviária integrada para qualquer lugar do país.</p>
+          <span class="step__tag">Atendimento nacional</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SUSTENTABILIDADE ░░ -->
+  <section class="eco" id="sustentabilidade">
+    <div class="eco__rays" aria-hidden="true"></div>
+    <div class="wrap eco__inner">
+      <header class="sec-head">
+        <span class="sec-tag" data-reveal>04 — Sustentabilidade</span>
+        <h2 class="sec-title">
+          <span class="line"><span data-split>Nossa essência</span></span>
+          <span class="line line--accent"><span data-split>é sustentável</span></span>
+        </h2>
+        <p class="sec-desc sec-desc--center" data-reveal data-delay="160">
+          O ECO não está só no nome. Ele está na energia que move as máquinas,
+          no papel que entra e no resíduo que não sai daqui.
+        </p>
+      </header>
+
+      <div class="eco__grid">
+        <article class="eco__card eco__card--wide" data-reveal data-tilt>
+          <div class="eco__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg>
+          </div>
+          <h3>Energia solar</h3>
+          <p>Toda a estrutura da gráfica é impulsionada por energia solar própria — impressão de alta demanda com matriz limpa.</p>
+        </article>
+
+        <article class="eco__card" data-reveal data-delay="90" data-tilt>
+          <div class="eco__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M21 3c0 9-5.5 14-13 14H5"/><path d="M5 21c0-6 3-10 9-12"/></svg>
+          </div>
+          <h3>Papel certificado</h3>
+          <p>Insumos vindos de áreas reflorestadas, com selos de qualidade internacionais.</p>
+        </article>
+
+        <article class="eco__card" data-reveal data-delay="180" data-tilt>
+          <div class="eco__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg>
+          </div>
+          <h3>Zero desperdício</h3>
+          <p>Redução de sobras e reaproveitamento de material em todos os setores.</p>
+        </article>
+
+        <article class="eco__card" data-reveal data-delay="270" data-tilt>
+          <div class="eco__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11z"/><path d="m9 11 2 2 4-4"/></svg>
+          </div>
+          <h3>Consumo consciente</h3>
+          <p>Time treinado para operar com responsabilidade em cada etapa do processo.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ ESTRUTURA ░░ -->
+  <section class="plant" id="estrutura">
+    <div class="wrap">
+      <header class="sec-head sec-head--split">
+        <div>
+          <span class="sec-tag" data-reveal>05 — Estrutura</span>
+          <h2 class="sec-title">
+            <span class="line"><span data-split>Por dentro do</span></span>
+            <span class="line"><span data-split>parque gráfico</span></span>
+          </h2>
+        </div>
+        <p class="sec-desc" data-reveal data-delay="150">
+          Sede própria desde 2018, com investimento constante em maquinário de
+          alta tecnologia, equipe capacitada e controle rígido de qualidade.
+        </p>
+      </header>
+    </div>
+
+    <div class="gallery" aria-label="Fotos da estrutura da Ecoprint">
+      <div class="gallery__row" data-marquee data-dir="1">
+        <figure><img src="assets/img/g1.jpg" alt="Recepção da Ecoprint" loading="lazy"></figure>
+        <figure><img src="assets/img/g2.jpg" alt="Atendimento comercial" loading="lazy"></figure>
+        <figure><img src="assets/img/g3.jpg" alt="Showroom de embalagens" loading="lazy"></figure>
+        <figure><img src="assets/img/g4.jpg" alt="Sala de amostras e desenvolvimento" loading="lazy"></figure>
+        <figure><img src="assets/img/g1.jpg" alt="" aria-hidden="true" loading="lazy"></figure>
+        <figure><img src="assets/img/g2.jpg" alt="" aria-hidden="true" loading="lazy"></figure>
+        <figure><img src="assets/img/g3.jpg" alt="" aria-hidden="true" loading="lazy"></figure>
+        <figure><img src="assets/img/g4.jpg" alt="" aria-hidden="true" loading="lazy"></figure>
+      </div>
+      <div class="gallery__row" data-marquee data-dir="-1">
+        <figure><img src="assets/img/g5.jpg" alt="Mesa do time comercial" loading="lazy"></figure>
+        <figure><img src="assets/img/g6.jpg" alt="Estoque de matéria-prima" loading="lazy"></figure>
+        <figure><img src="assets/img/g7.jpg" alt="Estoque de tintas e insumos" loading="lazy"></figure>
+        <figure><img src="assets/img/g9.jpg" alt="Impressoras offset e linha de acabamento" loading="lazy"></figure>
+        <figure><img src="assets/img/g5.jpg" alt="" aria-hidden="true" loading="lazy"></figure>
+        <figure><img src="assets/img/g6.jpg" alt="" aria-hidden="true" loading="lazy"></figure>
+        <figure><img src="assets/img/g7.jpg" alt="" aria-hidden="true" loading="lazy"></figure>
+        <figure><img src="assets/img/g9.jpg" alt="" aria-hidden="true" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FAQ ░░ -->
+  <section class="faq" id="faq">
+    <div class="wrap faq__inner">
+      <header class="sec-head">
+        <span class="sec-tag" data-reveal>06 — Dúvidas</span>
+        <h2 class="sec-title sec-title--sm"><span class="line"><span data-split>Perguntas frequentes</span></span></h2>
+      </header>
+
+      <div class="acc" data-acc>
+        <details class="acc__item" data-reveal>
+          <summary><span>Qual a tiragem mínima?</span><i aria-hidden="true"></i></summary>
+          <div class="acc__body"><p>Depende do serviço. Em impressão digital atendemos pequenas tiragens sem problema; em offset e flexografia a tiragem mínima é definida conforme o formato, o substrato e o acabamento. Envie seu briefing que retornamos com a melhor configuração.</p></div>
+        </details>
+        <details class="acc__item" data-reveal data-delay="80">
+          <summary><span>Vocês entregam fora do Ceará?</span><i aria-hidden="true"></i></summary>
+          <div class="acc__body"><p>Sim. Temos capacidade de atendimento nacional, com logística rodoviária integrada para levar a produção a qualquer lugar do país.</p></div>
+        </details>
+        <details class="acc__item" data-reveal data-delay="160">
+          <summary><span>Vocês criam a arte ou só imprimem?</span><i aria-hidden="true"></i></summary>
+          <div class="acc__body"><p>Os dois. Oferecemos soluções integradas que vão da criação do projeto até a impressão do produto aprovado — e também recebemos arquivos fechados pelo seu time.</p></div>
+        </details>
+        <details class="acc__item" data-reveal data-delay="240">
+          <summary><span>Como envio meus arquivos?</span><i aria-hidden="true"></i></summary>
+          <div class="acc__body"><p>Preferencialmente em PDF fechado, em CMYK, com sangria e marcas de corte. Nosso time de pré-impressão confere tudo e envia a prova para aprovação antes de rodar.</p></div>
+        </details>
+        <details class="acc__item" data-reveal data-delay="320">
+          <summary><span>Qual o prazo de produção?</span><i aria-hidden="true"></i></summary>
+          <div class="acc__body"><p>O prazo é confirmado na proposta e conta a partir da aprovação da prova. Processo de impressão e acabamento automatizados nos permitem atender prazos apertados do mercado atual.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ ORÇAMENTO ░░ -->
+  <section class="quote" id="orcamento">
+    <div class="wrap quote__inner">
+      <div class="quote__pitch">
+        <h2 class="quote__title">
+          <span class="line"><span data-split>Saia do previsível,</span></span>
+          <span class="line line--accent"><span data-split>venha para a Ecoprint</span></span>
+        </h2>
+        <p data-reveal data-delay="180">
+          Conte o que você precisa imprimir. Nosso time comercial responde com
+          uma proposta técnica — substrato, acabamento, prazo e valor.
+        </p>
+
+        <ul class="quote__contacts">
+          <li data-reveal data-delay="220">
+            <em>Telefone</em>
+            <a href="tel:+558835715027" data-cursor="Ligar">(88) 3571-5027</a>
+          </li>
+          <li data-reveal data-delay="270">
+            <em>E-mail</em>
+            <a href="mailto:atendimento@ecoprint.com.br" data-cursor="Escrever">atendimento@ecoprint.com.br</a>
+          </li>
+          <li data-reveal data-delay="320">
+            <em>Endereço</em>
+            <a href="https://www.google.com/maps/place/Gr%C3%A1fica+Ecoprint+-+Ind%C3%BAstria+Gr%C3%A1fica+offset+e+comunica%C3%A7%C3%A3o+visual/@-7.2529513,-39.315121,17z" target="_blank" rel="noopener" data-cursor="Mapa">Av. Maria Letícia Leite Pereira, 780 — Lagoa Seca, Juazeiro do Norte/CE</a>
+          </li>
+          <li data-reveal data-delay="370">
+            <em>Horário</em>
+            <span>Seg a Sex — 08h às 17h20</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="form" id="quoteForm" novalidate>
+        <div class="form__row">
+          <div class="field">
+            <input type="text" id="nome" name="nome" required placeholder=" " autocomplete="name">
+            <label for="nome">Nome</label>
+          </div>
+          <div class="field">
+            <input type="text" id="empresa" name="empresa" placeholder=" " autocomplete="organization">
+            <label for="empresa">Empresa</label>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="field">
+            <input type="email" id="email" name="email" required placeholder=" " autocomplete="email">
+            <label for="email">E-mail</label>
+          </div>
+          <div class="field">
+            <input type="tel" id="telefone" name="telefone" required placeholder=" " autocomplete="tel" inputmode="tel">
+            <label for="telefone">Telefone / WhatsApp</label>
+          </div>
+        </div>
+
+        <fieldset class="chips">
+          <legend>O que você precisa?</legend>
+          <label><input type="checkbox" name="servico" value="Embalagens"><span>Embalagens</span></label>
+          <label><input type="checkbox" name="servico" value="Flexografia"><span>Flexografia</span></label>
+          <label><input type="checkbox" name="servico" value="Promocional"><span>Promocional</span></label>
+          <label><input type="checkbox" name="servico" value="Comunicação Visual"><span>Comunicação Visual</span></label>
+          <label><input type="checkbox" name="servico" value="Pequenas tiragens"><span>Pequenas tiragens</span></label>
+        </fieldset>
+
+        <div class="field field--area">
+          <textarea id="mensagem" name="mensagem" rows="4" required placeholder=" "></textarea>
+          <label for="mensagem">Descreva o material, tiragem e prazo</label>
+        </div>
+
+        <button class="btn btn--primary btn--block" type="submit" data-magnetic data-cursor="Enviar">
+          <span>Enviar pedido de orçamento</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+        </button>
+
+        <p class="form__note" id="formNote" role="status">
+          O envio abre seu aplicativo de e-mail com a mensagem pronta para
+          <b>atendimento@ecoprint.com.br</b>.
+        </p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- ░░ FOOTER ░░ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="assets/img/logo-light.png" alt="Ecoprint" width="672" height="241" loading="lazy">
+        <p>A boa impressão é a que fica.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Rodapé">
+        <div>
+          <h4>Navegação</h4>
+          <a href="#empresa">A Ecoprint</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#processo">Processo</a>
+          <a href="#sustentabilidade">Sustentabilidade</a>
+        </div>
+        <div>
+          <h4>Serviços</h4>
+          <a href="#servicos">Embalagens</a>
+          <a href="#servicos">Flexografia</a>
+          <a href="#servicos">Promocional</a>
+          <a href="#servicos">Comunicação Visual</a>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <a href="tel:+558835715027">(88) 3571-5027</a>
+          <a href="mailto:atendimento@ecoprint.com.br">atendimento@ecoprint.com.br</a>
+          <a href="https://www.instagram.com/grafica.ecoprint" target="_blank" rel="noopener">Instagram ↗</a>
+          <span>Seg a Sex — 08h às 17h20</span>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer__word" aria-hidden="true">ECOPRINT</div>
+
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> Ecoprint Serviços Gráficos Eireli — CNPJ 09.521.937/0001-87</span>
+      <span>Av. Maria Letícia Leite Pereira, 780 · Lagoa Seca · Juazeiro do Norte/CE · 63040-410</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ░░ VISUALIZADOR DE FOTOS ░░ -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lbTitle">
+  <div class="lb__backdrop" data-lb-close></div>
+
+  <div class="lb__dialog" role="document">
+    <header class="lb__head">
+      <div>
+        <span class="lb__tag">Portfólio</span>
+        <h2 class="lb__title" id="lbTitle"></h2>
+      </div>
+      <div class="lb__tools">
+        <span class="lb__counter"><b id="lbNow">1</b><i>/</i><span id="lbTotal">1</span></span>
+        <button class="lb__close" type="button" data-lb-close aria-label="Fechar visualizador">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="lb__stage" id="lbStage">
+      <button class="lb__nav lb__nav--prev" type="button" data-lb-prev aria-label="Foto anterior">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+
+      <figure class="lb__figure">
+        <img id="lbImg" alt="">
+        <span class="lb__spin" aria-hidden="true"></span>
+      </figure>
+
+      <button class="lb__nav lb__nav--next" type="button" data-lb-next aria-label="Próxima foto">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+
+    <div class="lb__thumbs" id="lbThumbs" role="tablist" aria-label="Miniaturas"></div>
+
+    <footer class="lb__foot">
+      <span class="lb__hint">← → para navegar · Esc para fechar</span>
+      <a class="btn btn--primary btn--sm" href="#orcamento" data-lb-quote>
+        <span>Orçar este serviço</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+      </a>
+    </footer>
+  </div>
+</div>
+
+<a class="float-wa" href="https://wa.me/558835715027" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" data-cursor="WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-3.9-4.6-4.1-.1-.2-1-1.4-1-2.6s.6-1.8.8-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.8-1c.2-.2.4-.2.6-.1l2 1c.2.1.4.2.4.3.1.2.1.6-.1 1.1z"/></svg>
+</a>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
