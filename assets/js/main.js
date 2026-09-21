@@ -523,9 +523,17 @@
     items.forEach(item => {
       const btn = $('.svc__link', item);
       if (!btn) return;
-      btn.addEventListener('click', () => {
-        lightbox.open(item.dataset.svc, $('[data-svc-nome]', item).textContent.trim(), btn);
-      });
+      const nome = $('[data-svc-nome]', item).textContent.trim();
+      const fotos = GALERIAS[item.dataset.svc] || [];
+
+      // O rótulo diz quantas fotos existem: no celular ele é o botão visível
+      const rotulo = $('.svc__go em', item);
+      if (rotulo && fotos.length) {
+        rotulo.textContent = fotos.length === 1 ? 'Ver 1 foto' : `Ver ${fotos.length} fotos`;
+      }
+      btn.setAttribute('aria-label', `Ver ${fotos.length} fotos de ${nome}`);
+
+      btn.addEventListener('click', () => lightbox.open(item.dataset.svc, nome, btn));
     });
 
     const prev = $('#svcPreview');

@@ -225,6 +225,8 @@ body.is-menu .burger i:nth-child(2){ transform:translateY(-3px) rotate(-45deg); 
   .nav{ display:none; }
   .burger{ display:block; }
   .header__actions .btn--sm{ display:none; }
+  /* sem a nav, nada empurrava as acoes para a direita */
+  .header__actions{ margin-left:auto; }
 }
 
 /* =====================================================================
@@ -570,7 +572,24 @@ body.is-menu .drawer__nav a:nth-child(6){ transition-delay:.48s }
   .svc__num{ grid-row:1; }
   .svc__name{ grid-column:1/-1; }
   .svc__desc{ grid-column:1/-1; }
-  .svc__go{ display:none; }
+
+  /* Sem hover no celular: o indicador vira um botão visível.
+     Quem recebe o toque continua sendo o .svc__link, que cobre o item. */
+  .svc__go{
+    grid-column:1/-1; justify-self:start; opacity:1; transform:none;
+    margin-top:18px; padding:12px 20px;
+    border:1px solid rgba(4,20,15,.18); border-radius:100px;
+    color:var(--pine); background:rgba(0,86,64,.05);
+  }
+  .svc__go svg{ width:17px; height:17px; }
+
+  /* Retorno visual ao tocar, já que :hover nunca dispara */
+  .svc__item:active::before{ transform:scaleY(1); transform-origin:50% 0; }
+  .svc__item:active{ color:var(--paper); }
+  .svc__item:active .svc__desc{ color:rgba(255,255,255,.62); }
+  .svc__item:active .svc__go{
+    color:var(--ink); background:var(--accent); border-color:var(--accent);
+  }
 }
 
 .svc__preview{
