@@ -109,16 +109,27 @@
      --------------------------------------------------------------- */
   function splitText() {
     $$('[data-split]').forEach(el => {
-      const text = el.textContent.trim();
+      const texto = el.textContent.trim().replace(/\s+/g, ' ');
       el.textContent = '';
       const frag = document.createDocumentFragment();
-      [...text].forEach((ch, i) => {
-        const s = document.createElement('span');
-        s.className = 'char';
-        s.textContent = ch === ' ' ? ' ' : ch;
-        s.style.animationDelay = (i * 22) + 'ms';
-        frag.appendChild(s);
+      let i = 0;
+
+      // Cada PALAVRA vira um bloco próprio; só o espaço entre elas pode quebrar.
+      // Sem isso o navegador quebra entre as letras (ex.: "frequente / s").
+      texto.split(' ').forEach((palavra, p) => {
+        if (p > 0) frag.appendChild(document.createTextNode(' '));
+        const w = document.createElement('span');
+        w.className = 'word';
+        [...palavra].forEach(ch => {
+          const c = document.createElement('span');
+          c.className = 'char';
+          c.textContent = ch;
+          c.style.animationDelay = (i++ * 22) + 'ms';
+          w.appendChild(c);
+        });
+        frag.appendChild(w);
       });
+
       el.appendChild(frag);
     });
   }
@@ -731,7 +742,7 @@
       });
 
       if (!ok) {
-        note.textContent = 'Preencha nome, e-mail válido, telefone e a descrição do material.';
+        note.textContent = 'Falta preencher nome, e-mail válido, telefone ou a descrição do material.';
         note.classList.add('is-error');
         return;
       }
@@ -741,22 +752,22 @@
 
       const body = [
         `Nome: ${data.get('nome')}`,
-        `Empresa: ${data.get('empresa') || '—'}`,
+        `Empresa: ${data.get('empresa') || 'não informada'}`,
         `E-mail: ${data.get('email')}`,
         `Telefone: ${data.get('telefone')}`,
-        `Serviços: ${servicos.length ? servicos.join(', ') : '—'}`,
+        `Serviços: ${servicos.length ? servicos.join(', ') : 'a definir'}`,
         '',
         'Descrição:',
         data.get('mensagem')
       ].join('\n');
 
       const href = `mailto:${CONFIG.email}`
-        + `?subject=${encodeURIComponent('Pedido de orçamento — ' + data.get('nome'))}`
+        + `?subject=${encodeURIComponent('Pedido de orçamento: ' + data.get('nome'))}`
         + `&body=${encodeURIComponent(body)}`;
 
       window.location.href = href;
 
-      note.innerHTML = 'Abrimos seu app de e-mail com a mensagem pronta. '
+      note.innerHTML = 'Abrimos o seu app de e-mail com a mensagem escrita. '
         + `Prefere WhatsApp? <a href="https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(body)}" target="_blank" rel="noopener"><b>Enviar por lá ↗</b></a>`;
       note.classList.add('is-ok');
     });
