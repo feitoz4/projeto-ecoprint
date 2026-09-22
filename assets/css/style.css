@@ -665,58 +665,50 @@ body.is-locked .svc__preview{ opacity:0 !important; }
 .eco__inner{ position:relative; z-index:2; }
 .eco .sec-head{ text-align:center; }
 .eco .sec-desc{ color:var(--muted-dark); }
-/* Bento de 3 colunas: card alto de destaque à esquerda, três apoios à direita.
-   Todas as células são ocupadas — nada de buraco na segunda linha. */
+/* Quatro compromissos curtos = quatro caixas iguais.
+   Tentei um card alto de destaque antes e o texto curto deixava um vao no meio. */
 .eco__grid{
-  display:grid;
-  grid-template-columns:1.15fr 1fr 1fr;
-  grid-auto-rows:minmax(186px, auto);
+  display:grid; grid-template-columns:repeat(4,1fr);
   gap:clamp(14px,1.6vw,20px);
+  align-items:stretch;
 }
-.eco__card:nth-of-type(1){ grid-area:1 / 1 / 3 / 2; }
-.eco__card:nth-of-type(2){ grid-area:1 / 2 / 2 / 3; }
-.eco__card:nth-of-type(3){ grid-area:1 / 3 / 2 / 4; }
-.eco__card:nth-of-type(4){ grid-area:2 / 2 / 3 / 4; }
 
 .eco__card{
   background:linear-gradient(160deg, rgba(255,255,255,.06), rgba(255,255,255,.015));
   border:1px solid var(--line-dark); border-radius:var(--r-lg);
-  padding:clamp(24px,2.6vw,34px);
-  display:flex; flex-direction:column; gap:12px;
+  padding:clamp(26px,2.4vw,34px);
+  display:flex; flex-direction:column; align-items:flex-start; gap:14px;
   transform-style:preserve-3d; will-change:transform;
   transition:border-color .4s, background .4s;
 }
 .eco__card:hover{ border-color:rgba(53,224,140,.42); }
 
-/* Card de destaque: respira mais e empurra o texto para a base */
+/* O destaque da energia solar vem da cor, nao do tamanho */
 .eco__card--wide{
-  justify-content:space-between; gap:clamp(20px,3vw,44px);
   background:
-    radial-gradient(120% 80% at 15% 100%, rgba(53,224,140,.16), transparent 60%),
-    linear-gradient(150deg, rgba(0,168,107,.24), rgba(255,255,255,.02));
+    radial-gradient(130% 100% at 0% 100%, rgba(53,224,140,.18), transparent 62%),
+    linear-gradient(155deg, rgba(0,168,107,.26), rgba(255,255,255,.02));
+  border-color:rgba(53,224,140,.26);
 }
-.eco__card--wide .eco__icon{ width:56px; height:56px; }
-.eco__card--wide h3{ font-size:clamp(1.5rem,2.5vw,2.05rem); }
-.eco__card--wide p{ font-size:15.6px; max-width:32ch; }
 
-.eco__icon{ width:42px; height:42px; color:var(--accent); flex:none; }
-.eco__card h3{ font-family:var(--display); font-size:var(--fs-h3); font-weight:600; letter-spacing:-.03em; margin:0; }
-.eco__card p{ margin:0; font-size:14.8px; color:var(--muted-dark); }
-.eco__card--wide > div:last-child, .eco__card__texto{ display:flex; flex-direction:column; gap:10px; }
+.eco__icon{
+  width:46px; height:46px; flex:none; color:var(--accent);
+  display:grid; place-items:center;
+  border:1px solid rgba(53,224,140,.28); border-radius:14px;
+  padding:11px; margin-bottom:4px;
+}
+.eco__card h3{
+  font-family:var(--display); font-weight:600;
+  font-size:clamp(1.12rem,1.5vw,1.34rem); letter-spacing:-.025em; line-height:1.15;
+  margin:0;
+}
+.eco__card p{ margin:0; font-size:14.6px; line-height:1.55; color:var(--muted-dark); }
 
 @media (max-width:980px){
-  .eco__grid{ grid-template-columns:repeat(2,1fr); grid-auto-rows:minmax(164px, auto); }
-  .eco__card:nth-of-type(1){ grid-area:1 / 1 / 2 / 3; }
-  .eco__card:nth-of-type(2){ grid-area:2 / 1 / 3 / 2; }
-  .eco__card:nth-of-type(3){ grid-area:2 / 2 / 3 / 3; }
-  .eco__card:nth-of-type(4){ grid-area:3 / 1 / 4 / 3; }
+  .eco__grid{ grid-template-columns:repeat(2,1fr); }
 }
 @media (max-width:560px){
-  .eco__grid{ grid-template-columns:1fr; grid-auto-rows:auto; }
-  .eco__card:nth-of-type(1),
-  .eco__card:nth-of-type(2),
-  .eco__card:nth-of-type(3),
-  .eco__card:nth-of-type(4){ grid-area:auto; }
+  .eco__grid{ grid-template-columns:1fr; }
 }
 
 /* =====================================================================
